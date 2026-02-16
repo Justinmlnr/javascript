@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <h1>Exercice 0</h1>
+
+        <script type="text/javascript">
+
+        /* Section 1 */   
+
+        var name = "Joe"; // variable nommé name pour ecrire un prénom
+
+        var city = 'London'; // variable nommé city qui prend pour valeur 'london'
+        var age = 32; // variable nommé age qui prend pour valeur '32'
+        var isRed = true; // variable isRed qui prend pour valeur true 
+        var isOld = age > 80; // variable isOld qui prend pour valeur 'age>80'
+
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; // variable previousJob qui prend pour valeur c'est ancien travail
+
+        function info(height, weight) { // crée une fonction info, en parametre taille et poid
+            if (height > 180) { // boolean: si taille supérieur a 180
+                console.log('Vous êtes grand'); // écrire vous êtes grand dans la console
+            }
+            if (weight < 0) { // boolean : si le poid et inférieur à 0
+                console.log('oups, there is a problem'); // écrire il y'a un probleme sur la console
+            } else if ( weight < 15) { // sinon si : le poid inférieur a 15 
+                console.log('Are you that slim ?') // écrire et tu si mince ?
+            } else { // sinon 
+                console.log('Good !') // écrire good ! 
+            }
+        }
+
+        info(165, 45); // fonction : ( taille, poid)
+
+        var myHeight = 175; // variable : ma taille égal 175
+        var myWeight = 86; // variable : mon poid égal 86
+
+        info(myHeight, myWeight); // fonction avec parametre : mon poid et tialle 
+
+        info(myHeight + 15, myWeight - 100); // fonction avec parametre : ma taille + 15 et mon poid - 100
+
+        function toUpper(variable) { // fonction verslehaut parametre variable
+            return variable.toUpperCase(); // retourner la fonction : variable.toUpperCase()
+        }
+
+        var upperName = toUpper(name); // variable upperName = toUpper ( parametre : name )
+
+        for (i = 0; i < 3; i = i + 1) { // boucle for : index égal 0 , index inférieur a 3, index = index + 1
+            console.log(previousJobs[i]); // afficher sur console : previousJobs [index]
+        }
+
+        /* Section 2: */
+
+        // afficher la ville dans laquele Joe vit.     
+        console.log(city);
+        // afficher si Joe est roux ou pas. 
+        console.log("Joe et t'il roux : " + isRed)
+        /* Section 3 */
+
+         /*console.log(myVariable);*/  // erreur myVariable n'est pas définie 
+        
+        </script>
+
+    </body>
+</html>
