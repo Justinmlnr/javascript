@@ -42,3 +42,24 @@
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;} 
+
+
+/*---------------------------------------------------------*/
+
+img {
+    max-width: 300px;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: max-content;
+}
+
+.colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
