@@ -58,3 +58,18 @@ function colonne () {
     console.log("colonne");
 }
 
+const input = document.getElementById("imgUrlInput");
+const button = document.getElementById("btnUrl");
+
+button.addEventListener("click", function () {
+
+  if (input.value === "") return;
+
+  let image = document.createElement("img");
+  image.src = input.value;
+
+  galeries.appendChild(image);
+
+  input.value = "";
+
+});
